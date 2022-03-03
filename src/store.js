@@ -17,7 +17,7 @@ const composedEnhancer = composeWithDevTools(
     applyMiddleware(print1, print2, print3)
 )
 
-// Pass enhancer as teh second arg, since there's no preloaded state
+// Pass enhancer as the second arg, since there's no preloaded state
 const store = createStore(rootReducer, composedEnhancer)
 
 export default store
